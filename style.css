@@ -25,29 +25,53 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 1.5rem;
   line-height: 1.1;
 }
 
 #app {
-  max-width: 1280px;
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.header {
+  align-items: center;
+  box-shadow: 0 5px 10px #24242428;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.header .logo {
+  width: 3.5rem;
+}
+
+.header .text {
+  margin: 0;
+}
+
+#canvas-container {
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  overflow: scroll;
+  padding: 1rem;
 }
 
 button {
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;

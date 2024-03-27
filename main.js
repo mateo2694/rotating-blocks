@@ -1,9 +1,13 @@
 import "./style.css";
-import artLogo from "./assets/art-240.svg";
+import artLogo from "./src/assets/art-240.svg";
 import p5 from "p5";
+// import sketch from "./src/sketch";
 
 document.querySelector("#app").innerHTML = `
-  <img src=${artLogo} alt="Sketch logo" />
+  <header class="header">
+    <img src=${artLogo} alt="Sketch logo" class="logo" />
+    <h1 class="text">Rotating Blocks</h1>
+  </header>
   <div id="canvas-container" />
 `;
 
